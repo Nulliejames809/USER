@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kella Nyapui - Elegant Women's Wear</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#e5c6b0',
+                        secondary: '#a56f67',
+                        accent: '#d4af87',
+                        dark: '#3d3d3d',
+                        light: '#f8f5f2',
+                    },
+                    fontFamily: {
+                        heading: ['Playfair Display', 'serif'],
+                        body: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1496747611176-843222e1e57c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1773&q=80');
+        }
+        .testimonial-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80');
+        }
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-body text-dark bg-light">
+    <!-- Sticky Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-2xl font-heading font-bold text-secondary">Kella Nyapui</h1>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-dark hover:text-secondary transition-all font-medium">Home</a>
+                <a href="#about" class="text-dark hover:text-secondary transition-all font-medium">About</a>
+                <a href="#services" class="text-dark hover:text-secondary transition-all font-medium">Services</a>
+                <a href="#collection" class="text-dark hover:text-secondary transition-all font-medium">Collection</a>
+                <a href="#testimonials" class="text-dark hover:text-secondary transition-all font-medium">Testimonials</a>
+                <a href="#contact" class="text-dark hover:text-secondary transition-all font-medium">Contact</a>
+            </nav>
+            
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-dark hover:text-secondary">
+                    <i class="fas fa-shopping-bag"></i>
+                </a>
+                <a href="#" class="text-dark hover:text-secondary">
+                    <i class="fas fa-search"></i>
+                </a>
+                <button class="md:hidden text-dark">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg bg-cover bg-center bg-no-repeat h-screen flex items-center">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h2 class="text-4xl md:text-6xl font-heading font-bold mb-6">Elegance Redefined</h2>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Discover our exclusive collection of women's wear designed for the modern, sophisticated woman.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#collection" class="bg-secondary hover:bg-primary text-white px-8 py-3 rounded-full transition-all">Shop Now</a>
+                <a href="#about" class="border-2 border-white hover:bg-white hover:text-dark text-white px-8 py-3 rounded-full transition-all">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-secondary mb-4">Our Story</h2>
+                <div class="h-1 w-20 bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1566206091558-7f218b696731?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="About Kella Nyapui" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h3 class="text-2xl font-heading font-semibold mb-6">Crafting Elegance Since 2010</h3>
+                    <p class="text-lg mb-6">Kella Nyapui was born from a passion for creating timeless, elegant clothing that empowers women to express their unique style and confidence.</p>
+                    <p class="text-lg mb-8">Our designs blend contemporary trends with classic elegance, using only the finest materials and craftsmanship to ensure every piece is as beautiful as the woman wearing it.</p>
+                    <a href="#" class="bg-primary hover:bg-secondary text-white px-8 py-3 rounded-full transition-all">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-secondary mb-4">Our Services</h2>
+                <div class="h-1 w-20 bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-4">Custom Tailoring</h3>
+                    <p>Personalized tailoring services to ensure your clothing fits perfectly and complements your unique body shape.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-4">Premium Quality</h3>
+                    <p>We use only the highest quality fabrics and materials to create clothing that lasts and maintains its beauty.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="text-4xl text-primary mb-4">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-4">Worldwide Delivery</h3>
+                    <p>We deliver our collections to customers around the world with fast and reliable shipping options.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section id="collection" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-secondary mb-4">Spring Collection</h2>
+                <div class="h-1 w-20 bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group relative overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1529903384028-929ae5dccdf1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="Evening Wear" class="w-full h-80 object-cover group-hover:scale-105 transition-all duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 flex items-end transition-all duration-300">
+                        <div class="p-6 text-white">
+                            <h3 class="text-xl font-heading font-semibold">Evening Wear</h3>
+                            <p class="mb-4">Elegant dresses for special occasions</p>
+                            <a href="#" class="text-sm font-medium border border-white py-2 px-4 hover:bg-white hover:text-dark transition-all">View Collection</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="Casual Wear" class="w-full h-80 object-cover group-hover:scale-105 transition-all duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 flex items-end transition-all duration-300">
+                        <div class="p-6 text-white">
+                            <h3 class="text-xl font-heading font-semibold">Casual Wear</h3>
+                            <p class="mb-4">Comfortable yet stylish everyday outfits</p>
+                            <a href="#" class="text-sm font-medium border border-white py-2 px-4 hover:bg-white hover:text-dark transition-all">View Collection</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1036&q=80" alt="Accessories" class="w-full h-80 object-cover group-hover:scale-105 transition-all duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 flex items-end transition-all duration-300">
+                        <div class="p-6 text-white">
+                            <h3 class="text-xl font-heading font-semibold">Accessories</h3>
+                            <p class="mb-4">Complete your look with our accessories</p>
+                            <a href="#" class="text-sm font-medium border border-white py-2 px-4 hover:bg-white hover:text-dark transition-all">View Collection</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="bg-primary hover:bg-secondary text-white px-8 py-3 rounded-full transition-all">View All Collections</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonial-bg bg-cover bg-center bg-no-repeat py-20 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">What Our Clients Say</h2>
+                <div class="h-1 w-20 bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-white bg-opacity-10 p-8 rounded-lg backdrop-filter backdrop-blur-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-primary text-2xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-lg italic mb-6">"The quality of Kella Nyapui's clothing is exceptional. I always receive compliments whenever I wear their designs. The custom tailoring service is a game-changer!"</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=776&q=80" alt="Sarah Johnson" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-semibold">Sarah Johnson</h4>
+                            <p class="text-primary">Loyal Customer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 p-8 rounded-lg backdrop-filter backdrop-blur-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="text-primary text-2xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-lg italic mb-6">"I've never felt more confident than when I'm wearing Kella Nyapui. Their attention to detail and unique designs make me feel special and empowered."</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Emily Roberts" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-semibold">Emily Roberts</h4>
+                            <p class="text-primary">Fashion Blogger</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="contact" class="py-20 bg-primary">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-6">Subscribe to Our Newsletter</h2>
+                <p class="text-lg text-white mb-8">Stay updated with our latest collections, exclusive offers, and fashion tips.</p>
+                
+                <form class="flex flex-col md:flex-row gap-4">
+                    <input type="email" placeholder="Your email address" class="flex-grow px-6 py-4 rounded-full focus:outline-none focus:ring-2 focus:ring-secondary">
+                    <button type="submit" class="bg-secondary hover:bg-dark text-white px-8 py-4 rounded-full transition-all">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-heading font-semibold mb-6">Kella Nyapui</h3>
+                    <p class="mb-6">Elegant women's wear for the modern, sophisticated woman.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-primary transition-all">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-primary transition-all">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-primary transition-all">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-primary transition-all">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-heading font-semibold mb-6">Shop</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-primary transition-all">New Arrivals</a></li>
+                        <li><a href="#" class="hover:text-primary transition-all">Bestsellers</a></li>
+                        <li><a href="#" class="hover:text-primary transition-all">Evening Wear</a></li>
+                        <li><a href="#" class="hover:text-primary transition-all">Casual Wear</a></li>
+                        <li><a href="#" class="hover:text-primary transition-all">Accessories</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-heading font-semibold mb-6">Company</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-primary transition-all">About Us</a></li>
+                        <li><a href="#" class="hover:text-primary transition-all">Careers</a></li>
+                        <li><a href="#" class="hover:text-primary transition-all">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-primary transition-all">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-primary transition-all">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-heading font-semibold mb-6">Contact</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-primary mr-3 mt-1"></i>
+                            <span>123 Fashion Street, Paris, France</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt text-primary mr-3 mt-1"></i>
+                            <span>+1 (123) 456-7890</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope text-primary mr-3 mt-1"></i>
+                            <span>info@kellanyapui.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p>&copy; 2023 Kella Nyapui. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
